@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<style type="text/css">
+			body{
+				background-color: #ffccff;
+			}
+			h1{
+				margin: 0;
+				position: absolute;
+				left: 350px;
+			}
+			.computer_cls{
+				margin: 0;
+				position: absolute;
+				left: 50px;
+				top: 50px;
+			}
+			.player_cls{
+				margin: 0;
+				position: absolute;
+				left: 750px;
+				top: 50px;
+			}
+			#rck_btn{
+				margin: 0;
+				position: absolute;
+				top: 200px;
+				left:370px;
+			}
+			#ppr_btn{
+				margin: 0;
+				
+				position: absolute;
+				top: 200px;
+				left:470px;
+			}
+			#scr_btn{
+				margin: 0;
+				position: absolute;
+				top: 200px;
+				left:570px;
+			}
+			#ply_choice{
+				margin: 0;
+				position: relative;
+				top: 0px;
+				left:10px;
+			}
+			#comp_choice{
+				margin: 0;
+				position: relative;
+				top: 0px;
+				left:10px;
+			}
+		    #comp_score_id{
+		    	margin: 0;
+		    	position: relative;
+		    	top: 300px;
+		    	left: 40px;
+		   }
+		   #ply_score_id{	
+		    	position: absolute;
+		    	top: 300px;
+		    	left: 750px;
+		   }
+		   #ply_score{
+		   		color: #990099;
+		   		font-size: 30px;
+		   }
+		   #ply_choice{
+		   		color: #990099;
+		   }
+		   #comp_score{
+		   		color: #0000ff;
+		   		font-size: 30px;
+		   }
+		   #comp_choice{
+		   		color: #0000ff;
+		   }
+		   #result{
+				position: absolute;	
+				top: 90px;
+				left: 410px;		
+				height: 27px;			
+				width: 200px;
+				background-color: #ff8533;	 
+				text-align: center;
+				font-weight: bold;
+		   		color: #fff;	 	
+		   }
+		   #ph{
+		   		position: relative;
+		   		top: 3px;
+		   		font-weight: bold;
+		   		color: #fff;		   
+		   	}
+		   	.computer_cls, .player_cls{
+		   		color: #4da6ff;
+		   	}
+		   	.score{
+		   		color: #336600;
+		   	}
+		</style>
+	</head>
+
+	<body>
+
+		<h1>ROCK PAPER SCISSOR</h1>
+
+		<h2 class="computer_cls">Computer: <span id="comp_choice"></span> </h2>
+		<h2 class="player_cls">Player: <span id="ply_choice"></span> </h2>
+
+
+		
+
+
+		<button class="btn" id="rck_btn">ROCK</button>
+		<button class="btn" id="ppr_btn">PAPER</button>
+		<button class="btn" id="scr_btn">SCISSOR</button>
+
+
+
+		<h3 class="score" id="comp_score_id">Computer Score: <span id="comp_score"></span><h3>
+
+
+		<h3 class="score" id="ply_score_id">Player Score: <span id="ply_score"></span></h3>
+
+		
+
+
+
+		<div id="result"><span id="ph">RESULT</span></div>
+
+		<script type="text/javascript" src="rps.js" charset="utf-8"></script>
+
+	</body>
+
+</html>
